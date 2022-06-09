@@ -93,6 +93,11 @@ section{
     letter-spacing: .2rem;
 }
 
+#logo-new{
+    height: 40px;
+    width: 50px;
+}
+
 .header{
     position: fixed;
     top:0; left:0; right:0;
