@@ -9,11 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+    <style>
+        df-messenger {
+            --df-messenger-bot-icon: "https://storage.googleapis.com/cloudprod-apiai/1123a507-d230-4a04-8b81-03cbb60e8577_x.png";
+            --df-messenger-chat-icon: "https://storage.googleapis.com/cloudprod-apiai/1123a507-d230-4a04-8b81-03cbb60e8577_x.png";
+            --df-messenger-bot-message: #181515;
+            --df-messenger-button-titlebar-color: #000000;
+            --df-messenger-button-titlebar-font-color: rgb(255, 255, 255);
+            --df-messenger-chat-background-color: #FFFFFF;
+            --df-messenger-font-color: rgb(255, 255, 255);
+            --df-messenger-send-icon: #92B7FE;
+            --df-messenger-user-message: #1704ca;
+            --df-messenger-input-box-color: #edf7fc;
+            --df-messenger-input-box-size: 100px;
+        }
+    </style>
 
     <header class="header">
         <a href="#" class="logo"> COMMENT SAVA </a>
@@ -55,6 +72,47 @@
 
     </header>
 
+    <br><br><br><br><br><br>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/backsgroud image.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/backgroud img.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/backgroud image.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     <section class="home" id="home">
 
         <div class="image" data-aos="fade-down">
@@ -70,12 +128,12 @@
 
     </section>
 
+
+
+
     <section class="services" id="services">
-
         <h1 class="heading"> our <span>services</span> </h1>
-
         <div class="box-container">
-
             <div class="box" data-aos="zoom-in">
                 <span>01</span>
                 <i class="fas fa-map-marker-alt"></i>
@@ -326,7 +384,7 @@
 
     <!-- footer section ends -->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function(d, m){
             var kommunicateSettings = 
                 {"appId":"239f230454c16afbf323ddae0f2fe2071","popupWidget":true,"automaticChatOpenOnNavigation":true};
@@ -336,7 +394,14 @@
             window.kommunicate = m; m._globals = kommunicateSettings;
         })(document, window.kommunicate || {});
     /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-    </script>
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="client-construction" agent-id="70be1ee0-e741-49fd-a0ab-03ce8e9f11dd"
+        language-code="en"></df-messenger>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
